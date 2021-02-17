@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assests/css/main.css">
+    <script src="./assests/js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Name of the School/ logo</h1>
+        </header>
+        <div class="stu-details">
+            <div class="dets">
+                <input id="studentname" type="text" placeholder="Student Name" autocomplete="on" required="yes" />
+                <select id="courses">
+                    <option>Course</option>
+                    <option>Mathematics</option>
+                    <option>Science</option>
+                    <option>English</option>
+                    <option>Economics</option>
+                    <option>Social Studies</option>
+                </select>
+                <input id="IA" type="number" placeholder="Internal Assessment Score" required="yes">
+                <input id="ES" type="number" placeholder="End Of Semester Score" required="yes">
+                <button onclick="studentGrade()">Submit</button>
+            </div>
+        </div>
+
+        <table id="gradetable">
+            <tr>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Internal Assessment</th>
+                <th>End of Semester</th>
+                <th>Total Score</th>
+                <th>Grade</th>
+            </tr>
+        </table>
+
+        <a href=""><button>Reset</button></a>
+    </div>
+</body>
+
+</html>
